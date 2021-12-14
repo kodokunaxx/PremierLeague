@@ -1,0 +1,74 @@
+.header {
+    display: flex;
+    justify-content: space-between;
+    background-color: #37003c;
+    height: 60px;
+    position: sticky;
+    top: 0;
+    overflow-x: hidden;
+    z-index: 50;
+}
+
+.header .header-left {
+    display: flex;
+    align-items: center;
+}
+
+.header .header-left .logo-side {
+    background-color: #f5f5f5;
+    width: 123px;
+    border-bottom-right-radius: 45px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 60px;
+    min-width: 100px;
+    margin-right: 24px;
+}
+
+.header-left .logo {
+    background-image: url('../../img/logo.jpg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin-top: 5px;
+    height: 55px;
+    width: 50px;
+    cursor: pointer;
+}
+
+.header-left .menu {
+    line-height: 60px;
+    padding: 0 24px;
+    cursor: pointer;
+    color: #ffffff;
+    max-height: 60px;
+    /* white-space: nowrap; */
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.header-left .menu:hover {
+    background-color: #692a6f;
+}
+
+.header .header-right {
+    display: flex;
+    align-items: center;
+    color: #ffffff;
+    /* margin-right: 24px; */
+}
+
+.header-right .menu {
+    line-height: 60px;
+    padding: 0 24px;
+    cursor: pointer;
+    color: #ffffff;
+    max-height: 60px;
+    /* white-space: nowrap; */
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.header-right .menu:hover {
+    background-color: #692a6f;
+}

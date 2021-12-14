@@ -1,0 +1,9 @@
+.content {
+    background-image: url('../../img/pl-footer-m-top.svg');
+    background-size: contain;
+    background-color: #37003c;
+    background-position: top right;
+    background-repeat: no-repeat, no-repeat;
+    min-height: calc(100vh - 301px);
+    padding: 24px 15%;
+}

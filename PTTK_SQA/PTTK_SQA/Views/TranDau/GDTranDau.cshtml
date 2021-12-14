@@ -1,0 +1,109 @@
+﻿@using PTTK_SQA.Models.Entities;
+@{
+    ViewData["Title"] = "Danh Sách trận đấu";
+}
+
+<style>
+    .ct-info {
+        display: flex;
+        align-items: center;
+        background-color: #3B294A;
+        width: 100%;
+        height: 40px;
+        margin: 12px 0 12px 0;
+        border-radius: 4px;
+    }
+
+        .ct-info div {
+            line-height: 40px;
+            padding: 0 24px;
+            color: #ffffff;
+            max-height: 40px;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            width: 35%;
+        }
+
+    .no-content {
+        text-align: center;
+        line-height: 100px;
+    }
+
+    .event {
+        text-align: center;
+        vertical-align: middle;
+        padding: 0 4px;
+        width: 40px;
+        background-color: #3B294A;
+        margin-left: 6px;
+        border-radius: 4px;
+    }
+</style>
+
+<div>
+    <h4><b>DANH SÁCH TRẬN ĐẤU THAM GIA GHI BÀN</b></h4>
+    <div class="ct-info">
+        @if (ViewData["Info"] != null)
+        {
+            List<string> lstInfo = (List<string>)ViewData["Info"];
+            <div class="info-l">Cầu thủ: @lstInfo[0]</div>
+            <div class="info-r">Đội bóng: @lstInfo[1]</div>
+        }
+        else
+        {
+            <div class="info-l">Cầu thủ: Không có thông tin</div>
+            <div class="info-r">Đội bóng: Không có thông tin</div>
+        }
+    </div>
+    <div class="table">
+        <table>
+            <thead>
+                <tr>
+                    <th class="text-center">STT</th>
+                    <th class="text-center">Mã</th>
+                    <th class="long-width">Đối thủ</th>
+                    <th class="medium-width text-center">Số bàn thắng</th>
+                    <th class="long-width">Thời điểm ghi bàn</th>
+                </tr>
+            </thead>
+            <tbody>
+                @if (ViewData["TKTranDau"] != null)
+                {
+                    Dictionary<TranDau, List<SuKien>> dict = (Dictionary<TranDau, List<SuKien>>)ViewData["TKTranDau"];
+                    int stt = 0;
+                    @foreach (KeyValuePair<TranDau, List<SuKien>> item in dict)
+                    {
+                        TranDau tranDau = item.Key; List<SuKien> suKiens = item.Value;
+                        stt++;
+                        <tr>
+                            <td class="text-center">@stt</td>
+                            <td class="text-center">@tranDau.MaTranDau</td>
+                            <td class="long-width">@tranDau.DoiKhach.DoiBong.TenDoiBong</td>
+                            <td class="medium-width text-center">@tranDau.DoiNha.SoBanThang</td>
+                            <td class="long-width" style="display: flex; align-items: center">
+                                @foreach (SuKien sukien in suKiens)
+                                {
+                                    <div class="event" title="@sukien.GhiChu">@sukien.ThoiDiem'</div>
+                                }
+                            </td>
+                        </tr>
+                    }
+                }
+                else
+                {
+                    <tr class="no-content">
+                        <td colspan="9">Không có dữ liệu</td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+    </div>
+</div>
+
+<script>
+    document.getElementById("thongke").classList.add("selected");
+    function xemTranDau(id) {
+        window.location.href = `/TranDau?cauthu=${id}`;
+    }
+</script>

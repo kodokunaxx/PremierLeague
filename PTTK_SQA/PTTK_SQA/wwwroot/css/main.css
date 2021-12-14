@@ -1,0 +1,24 @@
+@import url('./layout/header.css');
+@import url('./layout/content.css');
+@import url('./layout/footer.css');
+@import url('./layout/login.css');
+@import url('./base/table.css');
+@import url('./base/var-cls.css');
+@import url('./base/var-spacing.css');
+@import url('./base/input.css');
+@import url('./base/button.css');
+body {
+    padding: 0;
+    margin: 0;
+    font-size: 15px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: #ffffff;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+.selected {
+    background-color: #765982;
+}

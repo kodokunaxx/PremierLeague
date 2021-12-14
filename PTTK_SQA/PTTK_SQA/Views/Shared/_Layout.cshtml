@@ -1,0 +1,57 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"]</title>
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/css/main.css" />
+</head>
+<body>
+    <div class="header">
+        <div class="header-left">
+            <div class="logo-side">
+                <div class="logo"></div>
+            </div>
+            <a class="menu" href="/" id="trangchu">Trang chủ</a>
+            <a class="menu" href="/">Lên Lịch</a>
+            <a class="menu" href="/">Đăng ký cầu thủ</a>
+            <a class="menu" href="/">Phân công trọng tài</a>
+            <a class="menu" href="/">Cập nhật kết quả</a>
+            <a class="menu" href="/ThongKe" id="thongke">Thống kê</a>
+            <a class="menu" href="/">Hợp đồng</a>
+            <a class="menu" href="/">Hóa đơn</a>
+        </div>
+        <div class="header-right">
+            <a class="menu" href="/DangXuat">Đăng xuất</a>
+        </div>
+    </div>
+    <div class="content">
+        @RenderBody()
+    </div>
+    <div class="footer">
+        <div class="logo-footer"></div>
+        <div class="contacts">
+            <div class="fb-logo"></div>
+            <div class="ig-logo"></div>
+            <div class="yt-logo"></div>
+            <div class="tw-logo"></div>
+        </div>
+        <div class="widget-link">
+            <a href="/">Liên hệ</a>
+            <p>|</p>
+            <a href="/">Điều khoản sử dụng</a>
+            <p>|</p>
+            <a href="/">Chính sách bảo mật</a>
+            <p>|</p>
+            <a href="/">Cài đặt bảo mật</a>
+        </div>
+        <div style="text-align:center">Copyright © 2021 Bản quyền thuộc về hadm. Chỉ được phát hành lại thông tin trên website này khi có sự đồng ý bằng văn bản của hadm (Việt Nam)</div>
+    </div>
+    <script src="https://use.fontawesome.com/1e084cc5a9.js" defer></script>
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="~/js/site.js" asp-append-version="true"></script>
+    @RenderSection("Scripts", required: false)
+</body>
+</html>

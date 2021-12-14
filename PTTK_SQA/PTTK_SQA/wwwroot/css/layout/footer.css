@@ -1,0 +1,84 @@
+.footer {
+    background-image: url('../../img/pl-footer-rv.png');
+    background-size: contain;
+    background-color: #37003c;
+    background-position: bottom left;
+    background-repeat: no-repeat, no-repeat;
+    padding-bottom: 24px;
+    /* height: 150px; */
+}
+
+.footer .logo-footer {
+    margin: auto;
+    width: 100px;
+    height: 100px;
+    background-image: url('../../img/logo-footer.png');
+    background-size: contain;
+    background-position: 0 0, 0 100%;
+    background-repeat: no-repeat, no-repeat;
+    cursor: pointer;
+}
+
+.footer .contacts {
+    margin-top: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.contacts .fb-logo {
+    margin: 0 12px;
+    width: 32px;
+    height: 32px;
+    background-image: url('../../img/fb-logo.png');
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat, no-repeat;
+    cursor: pointer;
+}
+
+.contacts .ig-logo {
+    margin: 0 12px;
+    width: 32px;
+    height: 32px;
+    background-image: url('../../img/ig-logo.png');
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat, no-repeat;
+    cursor: pointer;
+}
+
+.contacts .yt-logo {
+    margin: 0 12px;
+    width: 32px;
+    height: 32px;
+    background-image: url('../../img/yt-logo.png');
+    background-size: contain;
+    background-position: center 5px;
+    background-repeat: no-repeat, no-repeat;
+    cursor: pointer;
+}
+
+.contacts .tw-logo {
+    margin: 0 12px;
+    width: 32px;
+    height: 32px;
+    background-image: url('../../img/tw-logo.png');
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat, no-repeat;
+    cursor: pointer;
+}
+
+.footer .widget-link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 16px;
+}
+
+.widget-link a,
+p {
+    color: #ffffff;
+    margin: 0 4px;
+}

@@ -1,0 +1,85 @@
+﻿@using PTTK_SQA.Models.Entities;
+@model ThanhVienBTC;
+@{
+    Layout = null;
+}
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Đăng nhập</title>
+    <link rel="stylesheet" href="~/css/main.css">
+</head>
+<body>
+    <div class="login">
+        <div class="form">
+            <div class="form-content">
+                <p class="text-center">
+                    <img src="~/img/premier-league-logo.png" height="60px" />
+                    <form method="post" asp-controller="ThanhVienBTC" asp-action="Login" onsubmit="return validate()">
+                        <label>Tên đăng nhập</label>
+                        <input type="text"
+                               asp-for="TenDangNhap"
+                               autofocus
+                               tabindex="1"
+                               class="input m-t-5" 
+                               onfocus="removeError()"/>
+                        <p class="m-t-5 toast dis-n" id="toastname">Tên đăng nhập không được để trống</p>
+                        <label class="m-t-12">Mật khẩu</label>
+                        <input type="password"
+                               asp-for="MatKhau"
+                               tabindex="2"
+                               class="input m-t-5" 
+                               onfocus="removeError()"/>
+                        <p class="m-t-5 toast dis-n" id="toastpass">Mật khẩu không được để trống</p>
+                        @if (TempData["Login"] != null)
+                        {
+                            <p class="m-t-5 text-center toast" id="toastlogin"> Tài khoản hoặc mật khẩu không chính xác</p>
+                        }
+                        <input type="submit" value="Login" tabindex="3" class="button" style="margin: auto; margin-top: 12px">
+                    </form>
+                </p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+
+<script>
+    function checkEmpty(txt) {
+        if (txt == "" || txt == null) {
+            return false;
+        }
+        return true;
+    }
+
+    function removeError() {
+        let toast = document.querySelectorAll(".toast");
+        for (var i = 0; i < toast.length; i++) {
+            toast[i].style.display = "none";
+        }
+        let input = document.querySelectorAll("input");
+        for (var i = 0; i < input.length; i++) {
+            input[i].classList.remove("error");
+        }
+    }
+
+        function validate() {
+            document.getElementById("toastlogin").style.display = "none";
+        let username = document.getElementsByClassName("input").TenDangNhap.value;
+        let password = document.getElementsByClassName("input").MatKhau.value;
+        let isOk = true;
+        if (!checkEmpty(username)) {
+            document.getElementsByClassName("input").TenDangNhap.classList.add("error");
+            document.getElementById("toastname").style.display = "block";
+            isOk = false;
+        }
+        if (!checkEmpty(password)) {
+            document.getElementsByClassName("input").MatKhau.classList.add("error");
+            document.getElementById("toastpass").style.display = "block";
+            isOk = false;
+        }
+        return isOk;
+    }
+</script>

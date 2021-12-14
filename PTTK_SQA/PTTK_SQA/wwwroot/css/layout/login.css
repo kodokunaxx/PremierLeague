@@ -1,0 +1,48 @@
+.login {
+    width: 100vw;
+    height: 100vh;
+    background-image: url('../../img/login.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+}
+
+.login p {
+    color: #333;
+}
+
+.login .form {
+    width: 360px;
+    min-height: 305px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    background-color: #fff;
+    box-shadow: rgb(0 0 0 / 10%) 0px 4px 12px;
+}
+
+.form .form-content {
+    padding: 24px 32px;
+}
+
+.form-content form {
+    margin-top: 12px;
+    display: flex;
+    flex-direction: column;
+    color: #333;
+}
+
+.form-content .toast {
+    color: red;
+}
+
+.form-content .dis-n {
+    display: none;
+}
+
+.form .error {
+    border-color: red !important;
+}
