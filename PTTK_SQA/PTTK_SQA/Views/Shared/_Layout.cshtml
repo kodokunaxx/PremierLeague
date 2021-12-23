@@ -6,6 +6,7 @@
     <title>@ViewData["Title"]</title>
     <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
     <link rel="stylesheet" href="~/css/main.css" />
+    @RenderSection("styles", false);
 </head>
 <body>
     <div class="header">
@@ -13,17 +14,17 @@
             <div class="logo-side">
                 <div class="logo"></div>
             </div>
-            <a class="menu" href="/" id="trangchu">Trang chủ</a>
-            <a class="menu" href="/">Lên Lịch</a>
-            <a class="menu" href="/">Đăng ký cầu thủ</a>
-            <a class="menu" href="/">Phân công trọng tài</a>
-            <a class="menu" href="/">Cập nhật kết quả</a>
+            <a class="menu" href="/TrangChu" id="trangchu">Trang chủ</a>
+            <a class="menu" href="/TrangChu">Lên Lịch</a>
+            <a class="menu" href="/TrangChu">Đăng ký cầu thủ</a>
+            <a class="menu" href="/TrangChu">Phân công trọng tài</a>
+            <a class="menu" href="/TrangChu">Cập nhật kết quả</a>
             <a class="menu" href="/ThongKe" id="thongke">Thống kê</a>
-            <a class="menu" href="/">Hợp đồng</a>
-            <a class="menu" href="/">Hóa đơn</a>
+            <a class="menu" href="/TrangChu">Hợp đồng</a>
+            <a class="menu" href="/TrangChu">Hóa đơn</a>
         </div>
         <div class="header-right">
-            <a class="menu" href="/DangXuat">Đăng xuất</a>
+            <a class="menu" href="/">Đăng xuất</a>
         </div>
     </div>
     <div class="content">

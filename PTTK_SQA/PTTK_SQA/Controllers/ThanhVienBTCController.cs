@@ -20,7 +20,7 @@ namespace PTTK_SQA.Controllers
             _thanhVienBTCDAO = thanhVienBTCDAO;
         }
 
-        [Route("DangNhap")]
+        
         public IActionResult Index()
         {
             return View();

@@ -74,7 +74,7 @@ namespace PTTK_SQA
             {
                 endpoints.MapControllerRoute(
                     name: "default",
-                    pattern: "{controller=TrangChu}/{action=Index}/{id?}");
+                    pattern: "{controller=ThanhVienBTC}/{action=Index}/{id?}");
             });
         }
     }

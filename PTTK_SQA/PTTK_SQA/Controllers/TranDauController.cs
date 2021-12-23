@@ -14,7 +14,7 @@ namespace PTTK_SQA.Controllers
     public class TranDauController : Controller
     {
         private ITranDauDAO _tranDauDAO;
-        ISuKienDAO _suKienDAO;
+        private ISuKienDAO _suKienDAO;
 
         public TranDauController(ITranDauDAO tranDauDAO, ISuKienDAO suKienDAO)
         {

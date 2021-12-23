@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\kodokuna\\source\\repos\\PTTK_SQA\\PTTK_SQA\\PTTK_SQA.csproj": {}
+    "D:\\Hoc tap\\PTTK SQA\\PTTK_SQA\\PTTK_SQA\\PTTK_SQA.csproj": {}
   },
   "projects": {
-    "C:\\Users\\kodokuna\\source\\repos\\PTTK_SQA\\PTTK_SQA\\PTTK_SQA.csproj": {
+    "D:\\Hoc tap\\PTTK SQA\\PTTK_SQA\\PTTK_SQA\\PTTK_SQA.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\kodokuna\\source\\repos\\PTTK_SQA\\PTTK_SQA\\PTTK_SQA.csproj",
+        "projectUniqueName": "D:\\Hoc tap\\PTTK SQA\\PTTK_SQA\\PTTK_SQA\\PTTK_SQA.csproj",
         "projectName": "PTTK_SQA",
-        "projectPath": "C:\\Users\\kodokuna\\source\\repos\\PTTK_SQA\\PTTK_SQA\\PTTK_SQA.csproj",
+        "projectPath": "D:\\Hoc tap\\PTTK SQA\\PTTK_SQA\\PTTK_SQA\\PTTK_SQA.csproj",
         "packagesPath": "C:\\Users\\kodokuna\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\kodokuna\\source\\repos\\PTTK_SQA\\PTTK_SQA\\obj\\",
+        "outputPath": "D:\\Hoc tap\\PTTK SQA\\PTTK_SQA\\PTTK_SQA\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\kodokuna\\AppData\\Roaming\\NuGet\\NuGet.Config",

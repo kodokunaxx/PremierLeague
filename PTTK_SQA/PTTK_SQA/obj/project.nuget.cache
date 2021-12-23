@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "N3rRrfxZ7YKOCK4lmg9G1AfuneptmNw3f1ibisQD+jpChhFxEflf5/z+IruCK0bBINsU0DnCgkZF6w+x91BjRw==",
+  "dgSpecHash": "I+F44bqA0k8hs6PWoMP5TN4WA/cXw5pS0uunYj3j7hYBLMRpOyJkEo7iwArVTxn74a5ngnyXwnQPj/1nFKVg8g==",
   "success": true,
-  "projectFilePath": "C:\\Users\\kodokuna\\source\\repos\\PTTK_SQA\\PTTK_SQA\\PTTK_SQA.csproj",
+  "projectFilePath": "D:\\Hoc tap\\PTTK SQA\\PTTK_SQA\\PTTK_SQA\\PTTK_SQA.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\kodokuna\\.nuget\\packages\\dapper\\2.0.123\\dapper.2.0.123.nupkg.sha512",
     "C:\\Users\\kodokuna\\.nuget\\packages\\microsoft.aspnetcore.authentication.abstractions\\2.2.0\\microsoft.aspnetcore.authentication.abstractions.2.2.0.nupkg.sha512",
